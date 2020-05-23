@@ -1,0 +1,66 @@
+buildscript {
+    dependencies {
+        classpath rootProject.ext.androidPlugin
+        classpath rootProject.ext.kotlinPlugin
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.veyndan.xkcd"
+        minSdkVersion rootProject.ext.minSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation project(':android')
+    implementation rootProject.ext.anko
+    implementation rootProject.ext.ankoAppcompatV7Commons
+    implementation rootProject.ext.ankoAppcompatV7
+    implementation rootProject.ext.ankoCoroutines
+    implementation rootProject.ext.ankoCardviewV7
+    implementation rootProject.ext.ankoDesign
+    implementation rootProject.ext.ankoDesignCoroutines
+    implementation rootProject.ext.ankoGridlayoutV7
+    implementation rootProject.ext.ankoPercent
+    implementation rootProject.ext.ankoRecyclerviewV7
+    implementation rootProject.ext.ankoRecyclerviewV7Coroutines
+    implementation rootProject.ext.ankoSupportV4Commons
+    implementation rootProject.ext.ankoSupportV4
+    implementation rootProject.ext.ankoConstraintLayout
+    implementation rootProject.ext.kotlinStdlib
+    implementation rootProject.ext.moshi
+    implementation rootProject.ext.navi
+    implementation rootProject.ext.retrofit
+    implementation rootProject.ext.retrofitAdapter
+    implementation rootProject.ext.retrofitConverter
+    implementation rootProject.ext.rxAndroid
+    implementation rootProject.ext.rxJava
+    implementation rootProject.ext.sqlBrite
+    implementation rootProject.ext.supportAppcompat
+    implementation rootProject.ext.supportDesign
+    implementation rootProject.ext.supportSqlite
+    implementation rootProject.ext.supportSqliteFramework
+    implementation rootProject.ext.timber
+    testImplementation rootProject.ext.junit
+    androidTestImplementation rootProject.ext.supportTestRunner
+    androidTestImplementation rootProject.ext.supportTestEspresso
+}

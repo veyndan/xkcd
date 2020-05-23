@@ -1,0 +1,67 @@
+ext {
+    minSdkVersion = 25
+    compileSdkVersion = 28
+
+    androidVersion = '3.2.1'
+    androidPlugin = "com.android.tools.build:gradle:$androidVersion"
+
+    ankoVersion = '0.10.7'
+    anko = "org.jetbrains.anko:anko:$ankoVersion"
+    ankoAppcompatV7Commons = "org.jetbrains.anko:anko-appcompat-v7-commons:$ankoVersion"
+    ankoAppcompatV7 = "org.jetbrains.anko:anko-appcompat-v7:$ankoVersion"
+    ankoCoroutines = "org.jetbrains.anko:anko-coroutines:$ankoVersion"
+    ankoCardviewV7 = "org.jetbrains.anko:anko-cardview-v7:$ankoVersion"
+    ankoDesign = "org.jetbrains.anko:anko-design:$ankoVersion"
+    ankoDesignCoroutines = "org.jetbrains.anko:anko-design-coroutines:$ankoVersion"
+    ankoGridlayoutV7 = "org.jetbrains.anko:anko-gridlayout-v7:$ankoVersion"
+    ankoPercent = "org.jetbrains.anko:anko-percent:$ankoVersion"
+    ankoRecyclerviewV7 = "org.jetbrains.anko:anko-recyclerview-v7:$ankoVersion"
+    ankoRecyclerviewV7Coroutines = "org.jetbrains.anko:anko-recyclerview-v7-coroutines:$ankoVersion"
+    ankoSupportV4Commons = "org.jetbrains.anko:anko-support-v4-commons:$ankoVersion"
+    ankoSupportV4 = "org.jetbrains.anko:anko-support-v4:$ankoVersion"
+    ankoConstraintLayout = "org.jetbrains.anko:anko-constraint-layout:$ankoVersion"
+
+    kotlinVersion = '1.2.71'
+    kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlinVersion"
+
+    moshiVersion = '1.7.0'
+    moshi = "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+
+    naviVersion = '2.0.1'
+    navi = "com.trello.navi2:navi:$naviVersion"
+
+    retrofitVersion = '2.4.0'
+    retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    retrofitAdapter = "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    retrofitConverter = "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+
+    rxAndroidVersion = '2.1.0'
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+
+    rxJavaVersion = '2.2.2'
+    rxJava = "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+
+    sqlBriteVersion = '3.2.0'
+    sqlBrite = "com.squareup.sqlbrite3:sqlbrite-kotlin:$sqlBriteVersion"
+
+    supportVersion = '28.0.0-alpha3'
+    supportAppcompat = "com.android.support:appcompat-v7:$supportVersion"
+    supportDesign = "com.android.support:design:$supportVersion"
+
+    supportSqliteVersion = '1.0.0'
+    supportSqlite = "android.arch.persistence:db:$supportSqliteVersion"
+    supportSqliteFramework = "android.arch.persistence:db-framework:$supportSqliteVersion"
+
+    timberVersion = '4.7.1'
+    timber = "com.jakewharton.timber:timber:$timberVersion"
+
+    junitVersion = '4.12'
+    junit = "junit:junit:$junitVersion"
+
+    supportTestRunnerVersion = '1.0.2'
+    supportTestRunner = "com.android.support.test:runner:$supportTestRunnerVersion"
+
+    supportTestEspressoVersion = '3.0.2'
+    supportTestEspresso = "com.android.support.test.espresso:espresso-core:$supportTestEspressoVersion"
+}
